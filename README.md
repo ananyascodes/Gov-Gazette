@@ -40,7 +40,7 @@ text
 ### Clone & Run Locally
 
 ```bash
-git clone https://github.com/yourusername/gov-gazette.git
+git clone [https://github.com/yourusername/gov-gazette.git](https://github.com/ananyascodes/Gov-Gazette/tree/main)
 cd gov-gazette
 pip install -r requirements.txt
 cp .env.example .env
@@ -57,6 +57,8 @@ DEBUG=True
 Role	Can Post Blogs	Can Comment	Can Edit Posts	Can Delete Posts
 Gov Employee	✅ Yes	✅ Yes	✅ Yes	✅ Yes
 Normal User	❌ No	✅ Yes	❌ No	❌ No
+
+
 📖 API Endpoints
 Method	Endpoint	Description	Auth Required
 POST	/api/posts/	Create new blog post	Gov Employee
@@ -64,6 +66,9 @@ GET	/api/posts/	List all posts	No
 GET	/api/posts/{id}	Get single post	No
 POST	/api/posts/{id}/comments	Add comment	User
 PUT	/api/posts/{id}	Update post	Gov Employee
+
+
+
 🏗 Project Structure
 text
 gov-gazette/
@@ -77,6 +82,9 @@ gov-gazette/
 ├── requirements.txt
 ├── .env.example
 └── README.md
+
+
+
 🔐 Authentication
 Gov Employees: Register/Login with government credentials
 
